@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <title>Movie</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <div
+        class="statPart d-flex justify-content-end align-items-start pe-2 pt-1"
+      >
+        <div
+          class="imgHolder w-75 d-flex justify-content-end align-items-start"
+        >
+          <img class="align-self-start" src="logo.png" alt="" />
+        </div>
+
+        <span style="font-size: 30px; cursor: pointer" class="openNav">☰</span>
+      </div>
+
+      <div
+        id="leftMenu"
+        class="sidenav d-flex justify-content-start flex-wrap vh-100 py-4"
+      >
+        <div class="links">
+          <a class="navItem" href="#contact-us" id="popular">Popular</a>
+          <a class="navItem" href="#contact-us" id="now_playing">NowPLaying</a>
+          <a class="navItem" href="#contact-us" id="top_rated">TopRated</a>
+          <a class="navItem" href="#contact-us" id="popular">Trending</a>
+          <a class="navItem" href="#contact-us" id="upcoming">UpComing</a>
+          <a href="#contact-us" id="contact">Contact</a>
+        </div>
+
+        <div class="logoSection align-self-end p-3">
+          <div class="logos d-flex justify-content-start">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container main p-5">
+      <div class="container searchPanel mb-3">
+        <div class="row gy-2">
+          <div class="col-md-6">
+            <div class="seachItem">
+              <input
+                type="text"
+                placeholder="get movie by name..."
+                class="text-center w-100 p-2"
+                id="movieSearch"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="seachItem">
+              <input
+                type="text"
+                placeholder="search..."
+                class="text-center w-100 p-2"
+                id="searchInput"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 mt-4" id="movies"></div>
+      <section class="contactUs mt-5">
+        <h2>contactUs...</h2>
+        <div class="container searchPanel mb-3">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  class="text-center w-100 p-2"
+                  id="nameInput"
+                />
+                <div id="nameWarning" class="warning d-none w-100 p-2">
+                  Your Name is not valid
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="text"
+                  placeholder="Enter Email"
+                  class="text-center w-100 p-2"
+                  id="inputEmail"
+                />
+                <div id="emailWarning" class="warning d-none w-100 p-2">
+                  Enter Valid Email
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="number"
+                  placeholder="Enter phone"
+                  class="text-center w-100 p-2"
+                  id="phoneInput"
+                />
+                <div class="warning d-none w-100 p-2">Enter Valid Phone</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="text"
+                  placeholder="Enter Age"
+                  class="text-center w-100 p-2"
+                  id="searchInput"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="text"
+                  placeholder="Enter Password"
+                  class="text-center w-100 p-2"
+                  id="inputPassword"
+                />
+                <div id="passWarning" class="warning w-100 d-none p-2">
+                  entre valid password *At least one uppercase letter ,At least
+                  one lowercase letter ,At least one digit ,At least one special
+                  symbol and should be more than 4 character*
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contactItem">
+                <input
+                  type="text"
+                  placeholder="Enter RePassword"
+                  class="text-center w-100 p-2"
+                  id="inputRePassword"
+                />
+                <div id="rePassWarning" class="warning w-100 d-none p-2">
+                  Enter Valid Password
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
